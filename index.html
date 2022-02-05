@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <title>Challenge Oracle ONE - Semana 3 y 4: Juego de Ahorcado</title>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" type="text/css" href="css/style.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <meta name="author" content="Edgar Zavaleta">
+    </head>
+
+    <body>
+        <header>
+            <div class="container">
+                <h1 class="title">Juego del Ahorcado</h1>
+                <p>Para jugar presiona el botón jugar, y selecciona en el teclado la letra.</p>
+            </div>
+        </header>
+        <main>
+            <section class="container">
+                <button type="button" id="boton-jugar" > Jugar <i class="fa fa-play" aria-hidden="true"></i> </button> 
+                <div id="areajuego">
+                    <div>
+                        <h2 id="categoria"></h2>
+                        <p id="palabraEscondida"></p>
+                        <p id="letrasUsadas"></p>
+                        <p id="letras"></p>
+                        <p id="vidas">Actualmente cuentas con: 10 vidas</p>
+                        <p id="letrasIncorrectas"}></p>
+                        <p id="mensajeganador"></p>
+                    </div>
+                    <div class="wrapper">
+                        <canvas id="canvas0" width="600" height="400">Tu navegador no permite jugar </canvas>
+                        <canvas id="canvas1" width="600" height="400">Tu navegador no permite jugar </canvas>
+                        <canvas id="canvas2" width="600" height="400">Tu navegador no permite jugar </canvas>
+                        <p id="juegoNuevo"></p>
+                    </div>
+                </div>
+            </section>
+            <section class="container">
+                <button type="button" id="boton-agregar"> Añadir Palabra <i class="fa fa-plus-circle" aria-hidden="true"></i></button>
+                <div id="agregarpalabra">
+                    <textarea id="entrada" type="text" name="texto-entrada" placeholder="Escribe la palabra" ></textarea>
+                    <p>Para añadir una palabra solo haz click en el botón</p>
+                    <button type="button" id="boton-adicionar"> Añadir </button>
+                </div>
+            </section>
+        </main> 
+        <footer>
+            <p>Elaborado por: Edgar Zavaleta</p>
+            <ul class="social_footer_ul">
+                <li><a href="https://www.facebook.com/edgareslahostia/"><i class="fa fa-facebook"></i></a></li>
+                <li><a href="https://www.linkedin.com/in/edgarpzm"><i class="fa fa-linkedin"></i></a></li>
+                <li><a href="https://www.instagram.com/edgareslahostia/"><i class="fa fa-instagram"></i></a></li>
+                <li><a href="https://github.com/edgarxpascu"><i class="fa fa-github"></i></a></li>
+            </ul>
+        </footer>  
+        <script src="js/main.js"></script>
+        <script src="js/play.js"></script>
+    </body>
+
+</html>
